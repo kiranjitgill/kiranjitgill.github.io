@@ -188,6 +188,22 @@ footer { padding: 32px 0 48px; color: var(--muted); font-size: 0.9rem; border-to
 #shopify { border-top-color: var(--shopify); }
 #sap { border-top-color: var(--sap); }
 
+/* Tools */
+.tools { margin-top: 40px; }
+.tools > h3 { font-size: 1.25rem; margin-bottom: 18px; }
+.tool-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.tool-group { background: var(--surface); border: 1px solid var(--line); border-top: 3px solid var(--teal); border-radius: 12px; padding: 18px; }
+.tool-group.platforms { border-top-color: var(--magento); }
+.tool-group.erp { border-top-color: var(--sap); }
+.tool-group.data { border-top-color: var(--amber); }
+.tool-group.server { border-top-color: var(--ink); }
+.tool-group.design { border-top-color: var(--shopify); }
+.tool-group h4 { font-family: "Sora", "IBM Plex Sans", system-ui, sans-serif; font-size: 0.95rem; font-weight: 600; margin: 0 0 12px; }
+.tool-group ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.tool-group li { font-size: 0.9rem; padding: 5px 12px; border-radius: 999px; background: var(--bg); border: 1px solid var(--line); }
+@media (max-width: 820px) { .tool-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) { .tool-grid { grid-template-columns: 1fr; } }
+
 /* Process */
 .steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px 36px; counter-reset: step; }
 .steps li { counter-increment: step; position: relative; padding-top: 48px; }
@@ -412,7 +428,17 @@ footer { padding: 32px 0 48px; color: var(--muted); font-size: 0.9rem; border-to
           </ul>
         </div>
       </div>
-      <p class="other"><strong>Also familiar with:</strong> BigCommerce, WordPress, PHP, SQL, REST APIs, HTML, CSS and JavaScript.</p>
+      <div class="tools" id="tools">
+        <h3>Tools I use</h3>
+        <div class="tool-grid">
+          <div class="tool-group platforms"><h4>eCommerce platforms</h4><ul><li>Magento 2</li><li>Shopify</li><li>BigCommerce</li><li>WordPress</li></ul></div>
+          <div class="tool-group"><h4>Languages and frontend</h4><ul><li>PHP</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>Bootstrap</li></ul></div>
+          <div class="tool-group erp"><h4>ERP and integration</h4><ul><li>SAP Business One</li><li>APPSeCONNECT</li><li>ChannelAdvisor</li><li>REST APIs</li></ul></div>
+          <div class="tool-group data"><h4>Data and database</h4><ul><li>SQL</li><li>SQL Server Management Studio</li><li>SAP DTW</li><li>SAP UDFs</li></ul></div>
+          <div class="tool-group server"><h4>Server and code</h4><ul><li>cPanel</li><li>SSH</li><li>GitHub</li></ul></div>
+          <div class="tool-group design"><h4>Design</h4><ul><li>Photoshop</li></ul></div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -653,7 +679,7 @@ footer { padding: 32px 0 48px; color: var(--muted); font-size: 0.9rem; border-to
       <dl>
         <dt>Email</dt><dd><a href="mailto:5kiranjeetgill@gmail.com">5kiranjeetgill@gmail.com</a></dd>
         <dt>Location</dt><dd>Brampton, Ontario, Canada</dd>
-        <dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/kiranjeetgill/" target="_blank" rel="noopener">linkedin.com/in/kiranjeetgill/</a></dd>
+        <dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/kiranjeetgill/" target="_blank" rel="noopener">linkedin.com/in/kiranjeetgill</a></dd>
         <dt>GitHub</dt><dd><a href="https://github.com/kiranjitgill" target="_blank" rel="noopener">github.com/kiranjitgill</a></dd>
       </dl>
     </div>
