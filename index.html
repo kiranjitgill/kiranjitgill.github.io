@@ -204,6 +204,14 @@ footer { padding: 32px 0 48px; color: var(--muted); font-size: 0.9rem; border-to
 @media (max-width: 820px) { .tool-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 520px) { .tool-grid { grid-template-columns: 1fr; } }
 
+/* Building + earlier */
+.building { margin-top: 24px; padding: 20px 22px; border: 1.5px dashed var(--line); border-top: 3px solid var(--shopify); border-radius: 12px; background: var(--surface); }
+.building h3 { font-size: 1.1rem; margin: 0 0 6px; }
+.building p { margin: 0 0 12px; color: var(--muted); max-width: 40em; }
+.badge-progress { display: inline-block; font-size: 0.8rem; font-weight: 600; margin-bottom: 8px; }
+.badge-progress::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--amber); margin-right: 6px; vertical-align: 1px; }
+.earlier { margin: 0; }
+
 /* Process */
 .steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px 36px; counter-reset: step; }
 .steps li { counter-increment: step; position: relative; padding-top: 48px; }
@@ -469,6 +477,12 @@ footer { padding: 32px 0 48px; color: var(--muted); font-size: 0.9rem; border-to
           </ul>
         </div>
       </div>
+      <div class="building">
+        <span class="badge-progress">In progress</span>
+        <h3>Currently building: TrueSum</h3>
+        <p>A Shopify site for TrueSum, finance and sales intelligence tools for SAP Business One teams. Launching soon.</p>
+        <div class="tags"><span>Shopify</span><span>Theme customization</span><span>Web design</span></div>
+      </div>
     </div>
   </section>
 
@@ -588,40 +602,11 @@ footer { padding: 32px 0 48px; color: var(--muted); font-size: 0.9rem; border-to
         </div>
       </div>
       <div class="job">
-        <div class="when">Oct 2016 to Apr 2017<br>Toronto, Ontario</div>
+        <div class="when">2012 to 2017</div>
         <div>
-          <h3>Data Analyst (Internship)</h3>
-          <p class="co">Metro College of Technology</p>
-          <ul>
-            <li>Prepared datasets from raw data files using SAS import, merge, sort, update and format techniques.</li>
-            <li>Cleaned customer data with SAS and extracted data from SQL Server tables.</li>
-            <li>Produced statistical analyses, reports and summary presentations.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="job">
-        <div class="when">Jan 2015 to May 2016<br>Mohali, India</div>
-        <div>
-          <h3>Web Developer</h3>
-          <p class="co">Think NEXT Technologies Pvt. Ltd.</p>
-          <ul>
-            <li>Built responsive websites with HTML, CSS and Bootstrap.</li>
-            <li>Built an online food order system with HTML, CSS, JavaScript and ASP.NET.</li>
-            <li>Installed, configured and upgraded Oracle server software.</li>
-            <li>Developed a project on Oracle Data Guard using SQL.</li>
-            <li>Worked on eCommerce sites in Magento and BigCommerce, and on WordPress sites.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="job">
-        <div class="when">Aug 2012 to May 2013<br>Barnala, India</div>
-        <div>
-          <h3>Junior Web Developer</h3>
-          <p class="co">Sarv Saksharta</p>
-          <ul>
-            <li>Provided training in MS Office, SAS, SQL, HTML and CSS.</li>
-            <li>Designed and delivered lesson plans for four classes.</li>
-          </ul>
+          <h3>Earlier roles</h3>
+          <p class="co">Web development roles in India and a data analyst internship in Toronto</p>
+          <p class="earlier">Full work history on <a href="https://www.linkedin.com/in/kiranjeetgill/" target="_blank" rel="noopener">LinkedIn</a>.</p>
         </div>
       </div>
       <div class="edu">
